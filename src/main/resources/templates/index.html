@@ -5,11 +5,12 @@
     <title>GTD List</title>
 </head>
 <body>
-    <div th:each="gtd: ${allToDO}">
-        <div th:text="|${gtd.toDo} ${gtd.}|"> </div>
+    <div th:each="gtd: ${allToDo}">
+        <div th:text="|${gtd.getToDo()} ${gtd.getDescription()} ${gtd.isItDone()} ${gtd.getDeadLineDate()}|"> </div>
+    </div></br>
 
 
-    </div>
+
 
 </body>
 </html>

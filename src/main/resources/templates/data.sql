@@ -1,0 +1,2 @@
+INSETT INTO GTD (to_do, description, is_it_done, dead_line_date)
+values ('architekt', 'odebrac pozwolenia na budowe', 'false', 2020/09/18) ('droga', 'zamowic gruz na droge dojazdowa', 'false', 2020/09/17);
