@@ -1,14 +1,13 @@
-package model;
+package com.example.javastart27.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
-public class GTD {
+public class ThingsToDo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +17,10 @@ public class GTD {
     private boolean isItDone;
     private Date deadLineDate;
 
-    public GTD() {
+    public ThingsToDo() {
     }
 
-    public GTD(Long id, String toDo, String description, boolean isItDone, Date deadLineDate) {
+    public ThingsToDo(Long id, String toDo, String description, boolean isItDone, Date deadLineDate) {
         this.id = id;
         this.toDo = toDo;
         this.description = description;
