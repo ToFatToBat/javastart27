@@ -4,7 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @Entity
 public class ThingsToDo {
@@ -15,12 +16,12 @@ public class ThingsToDo {
     private String toDo;
     private String description;
     private boolean isItDone;
-    private Date deadLineDate;
+    private LocalDate deadLineDate;
 
     public ThingsToDo() {
     }
 
-    public ThingsToDo(Long id, String toDo, String description, boolean isItDone, Date deadLineDate) {
+    public ThingsToDo(Long id, String toDo, String description, boolean isItDone, LocalDate deadLineDate) {
         this.id = id;
         this.toDo = toDo;
         this.description = description;
@@ -60,11 +61,7 @@ public class ThingsToDo {
         isItDone = itDone;
     }
 
-    public Date getDeadLineDate() {
-        return deadLineDate;
-    }
+    public LocalDate getDeadLineDate() { return deadLineDate; }
 
-    public void setDeadLineDate(Date deadLineDate) {
-        this.deadLineDate = deadLineDate;
-    }
+    public void setDeadLineDate(LocalDate deadLineDate) { this.deadLineDate = deadLineDate; }
 }
