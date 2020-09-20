@@ -18,7 +18,7 @@ public class ThingsToDoController {
 
     @GetMapping("/")
     public String index(Model model) {
-        List<ThingsToDo> allToDo = thingsToDoRepository.findAllByItDoneFalseOrderByDeadLineDateAsc();
+        List<ThingsToDo> allToDo = thingsToDoRepository.findAllByisItDoneFalseOrderByDeadLineDateAsc();
         model.addAttribute("allToDo", allToDo);
         return "index";
     }
