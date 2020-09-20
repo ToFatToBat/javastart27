@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface ThingsToDoRepository extends JpaRepository <ThingsToDo, Long> {
 
-    List<ThingsToDo> findThingsToDoByItDoneFalseOrderByDeadLineDateDeadLineDateAsc();
+    List<ThingsToDo> findAllByItDoneFalseOrderByDeadLineDateAsc();
 }
+// findThingsToDoByItDoneFalseOrderByDeadLineDateDeadLineDateAsc
